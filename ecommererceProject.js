@@ -22,5 +22,33 @@ const items = [
 ];
 let cart = []
 function addCart(initial,add){
+    for(i=0; i<add.length; i++){
+        if(items.some(item => item.name === add[i])){
+            initial.push(items.find(item => item.name === add[i]))
+        } 
+        else{
+            console.log("Item isnt in list")
+            return null
+        }
+    }
+    return initial
+}
+cart = addCart(cart, ["Olive Oil", "Oats"])
+console.log(cart)
 
+function removeCart(initial, remove){
+        for(i=0; i<remove.length; i++){
+        if(items.some(item => item.name === remove[i])){
+            initial.pop(items.find(item => item.name === remove[i]))
+        } 
+        else{
+            console.log("Item isnt in list")
+            return null
+        }
+    }
+    return initial
+}
+
+cart = removeCart(cart, ["Oats"]){
+    
 }
