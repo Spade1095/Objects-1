@@ -26,27 +26,16 @@ let cart ={}
 let codeActive = false;
 function addCart(add){
 
-    x= add.name
-    if(cart[x]){
-            cart[x].count++
+    if(Object.hasOwn(cart,add)){
+            cart[add.name].count++
     }else{
-            cart[x] = add
-            cart[x].count++
+            cart[add.name] = add
+            cart[add.name]["count"] = 1
         }
     }
-
-cart = addCart("Oats")
+addCart(items[1])
 console.log(cart)
-    // for(i=0; i<add.length; i++){
-    //     if(items.some(item => item.name === add[i])){
-    //         initial.push(items.find(item => item.name === add[i]))
-    //     } 
-    //     else{
-    //         console.log("Item isnt in list")
-    //         return null
-    //     }
-    // }
-    // return initial
+
 function removeCart(initial, remove){
         for(i=0; i<remove.length; i++){
         if(items.some(item => item.name === remove[i])){
