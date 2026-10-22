@@ -32,6 +32,7 @@ if (add.stock>0){
             cart[add.name] = add
             cart[add.name]["count"] = 1
         }
+    item => item
     //look for item in the list items and chang its stock
     }else{
         //give error message
