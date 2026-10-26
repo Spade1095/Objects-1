@@ -2,7 +2,7 @@ html,
 body,
 *{
 
-    font-size: 10px;
+    font-size: 20px;
     box-sizing: border-box;
     margin:0;
     padding:0;
@@ -11,22 +11,33 @@ body{
     background-color: #ff0990;
 }
 
-.card{
-    background-color: #ff0000;
-    height:55rem;
+.card-1{
+    background-color: #F5F5DC;
+    height:18rem;
     width: 30rem;
-    /* background-color: #ffffff; */
-    /* space between 2 elements */
     margin:2.5rem  0.5rem;
-    /* padding is the space inside of an element */
     padding: 1rem;
+    color:rgb(0, 0, 0);
 }
-#test{
-    background:#00ff00
+.card-2{
+    background-color: #1560BD;
+    height:18rem;
+    width: 30rem;
+    margin:2.5rem  0.5rem;
+    padding: 1rem;
+    color:#000000;
 }
 .card-title{
-    margin:0;
-    font: size 1.8rem;
+    margin:15;
+    font-size: 4rem;
+    font-weight:800;
+    background-color: rgb(128, 8, 133);
+    color: white;
+}
+.card-subTitle{
+    margin:10;
+    font-size:2rem;
     font-weight:600;
-    
+    background-color: #3e0341;
+    color: white;
 }
