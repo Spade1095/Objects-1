@@ -11,6 +11,27 @@ body,
 }
 body{
     background-color: #ff0990;
+      /* background-image: linear-gradient(
+      to right,
+      rgba(82, 82, 82, 0.2),
+      rgba(61, 114, 180, 0.4)
+    ),
+    url(img/otters.jpg);
+  background-size: cover; */
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75vh;
+  color: white;
+  background-image:
+    linear-gradient(rgba(8, 84, 130, 0.8), rgba(4, 70, 115, 0.8)),
+    url("img/otters.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .card{
     flex: 1;
@@ -22,10 +43,9 @@ body{
     margin:1rem  0.5rem;
     padding: 1rem;
     border-radius: 1.6rem;
-    overflow-wrap: break-word;
-    word-break: break-word;
+    display: flex;
+    flex-direction: column;
 }
-    /* fix diff bg colors on cards 1 and 2 */
 .card1{
     background-color: #F5F5DC;
     color:rgb(0, 0, 0);
@@ -37,11 +57,11 @@ body{
 }
 .containter{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 1rem;
-    width:100%;
+    flex-direction: row;
+    justify-content: center;
+    gap:11%;
+    align-items: center;
 
 }
 
