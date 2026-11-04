@@ -24,6 +24,6 @@ function inject(){
 const header = document.getElementById("color");
 let x = 0;
 document.getElementById("btn").addEventListener("click", function(){
-    gerRGB();
+    getRGB();
     inject();
 });
